@@ -377,7 +377,8 @@ a {
 /* Modal */
 .modal, #drag {
   position: absolute;
-  background: rgba(229, 220, 214, 0.5);
+  background: linear-gradient(to bottom, #fff0e6 0%, #ffe6eb 100%);
+  opacity: 1;
   width: 100%;
   height: 100%;
   z-index: 100; }
@@ -394,48 +395,50 @@ a {
   border-radius: 8px;
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  padding: 40px; }
-
-.modal .content h2 {
-  font-size: 22px;
-  font-weight: 300;
-  color: #333;
-  margin: 0 0 20px 0; }
-
-.modal .content p {
-  margin: 0 0 20px 0;
-  color: #333;
-  font-size: 15px; }
+  padding: 40px;
+  text-align: center; }
+  .modal .content img {
+    height: 100px; }
+  .modal .content h2 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #333;
+    margin: 0 0 20px 0; }
+  .modal .content p {
+    margin: 0 0 20px 0;
+    color: #333;
+    font-size: 15px; }
 
 .modal.login fieldset {
   border: none;
   height: 40px;
   margin: 0 0 20px 0; }
-
-.modal.login fieldset input {
-  outline: none;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  padding: 0 10px;
-  font-size: 15px;
-  border: none;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 8px; }
-
+  .modal.login fieldset input {
+    outline: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 25px 10px;
+    font-size: 15px;
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px; }
 .modal.login button {
   outline: none;
+  padding: 25px 10px;
+  line-height: 0px;
   -webkit-appearance: none;
   border: none;
   border-radius: 8px;
   height: 40px;
   width: 100%;
-  background: #4CD964;
+  background: #FE4F72;
   font-size: 15px;
   font-weight: 600;
-  color: #fff; }
-
-.modal.login button:hover {
-  background: #2ac644; }
+  color: #fff;
+  transition: 0.35s;
+  cursor: pointer; }
+  .modal.login button:hover {
+    background: #4E259C; }
 
 /* Vendor */
