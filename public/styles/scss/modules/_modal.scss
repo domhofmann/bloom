@@ -37,15 +37,25 @@
          }
          
          p {
-            margin: 0 0 20px 0;
-            color: #333;
-            font-size: 15px;   
+            margin: 20px 0 20px 0;
+            color: rgba(0,0,0,0.3);
+            font-size: 13px; 
+             
+             a {
+                 color: rgba(0,0,0,0.3);
+                 font-weight: 600;
+             }
+             
          }
          
      }  
 }
 
 .modal.login {
+            &.hidden {
+                display: none;   
+            }
+    
             fieldset {
                 border: none;
                 height: 40px;
@@ -81,7 +91,7 @@
                 cursor: pointer; 
                 
                 &:hover {
-                    background: #4E259C;   
+                    background: #FE4F72;   
                 }
             }
          }

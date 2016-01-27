@@ -12,6 +12,18 @@
   overflow-y: auto;
   background: #fff;
   z-index: 1;
+  visibility: hidden;
+  transform: translateX(30%);
+  opacity: 0;
+  transition: 0.35s;
+
+    
+    &.open {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0%);
+        
+    }
 }
 
 #comments h2 {
@@ -125,6 +137,8 @@
   color: #fff;
   cursor: pointer;
   transition: 0.35s;
+  padding: 25px 10px;
+  line-height: 0px;
 }
 
 #comments .leave-comment button:hover {

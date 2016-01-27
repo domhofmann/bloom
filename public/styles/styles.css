@@ -16,9 +16,6 @@ html, body {
 a {
   text-decoration: none; }
 
-.hidden {
-  display: none; }
-
 .clear:after {
   content: "";
   display: table;
@@ -31,6 +28,8 @@ a {
 
 #drag {
   pointer-events: none; }
+  #drag.hidden {
+    display: none; }
 
 #drag h2 {
   position: absolute;
@@ -62,6 +61,8 @@ a {
   padding: 14px;
   font-weight: 600;
   font-size: 13px; }
+  #refresh.hidden {
+    display: none; }
 
 /* Components */
 /* Modules */
@@ -77,15 +78,29 @@ a {
   overflow-y: auto;
   padding: 0;
   box-sizing: border-box; }
-
-#sidebar .contact {
-  list-style: none; }
-
-#sidebar .contact a {
-  display: block; }
-
-#sidebar .contact a:hover {
-  background: #525260; }
+  #sidebar .contact {
+    list-style: none; }
+    #sidebar .contact a {
+      display: block; }
+      #sidebar .contact a:hover {
+        background: #525260; }
+    #sidebar .contact .name {
+      font-weight: 400;
+      color: white;
+      height: 24px;
+      padding: 12px 10px 6px 5px;
+      font-size: 13px;
+      list-style-type: none;
+      margin-left: 42px;
+      margin-right: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      opacity: 0.5; }
+      #sidebar .contact .name span {
+        font-size: 11px;
+        font-weight: 400;
+        opacity: 0.5; }
 
 #sidebar .contact.selected a, #sidebar .contact.selected a:hover {
   background: #F95074; }
@@ -93,29 +108,13 @@ a {
 #sidebar .contact.me {
   /*border-bottom: 2px solid rgba(0, 0, 0, 0.2);*/
   background: rgba(1, 1, 1, 0.1); }
-
-#sidebar .contact .name {
-  font-weight: 400;
-  color: white;
-  height: 24px;
-  padding: 12px 10px 6px 5px;
-  font-size: 13px;
-  list-style-type: none;
-  margin-left: 42px;
-  margin-right: 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  opacity: 0.5; }
-
-#sidebar .contact.me .name {
-  padding-top: 23px;
-  padding-bottom: 18px; }
-
-#sidebar .contact .name span {
-  font-size: 11px;
-  font-weight: 400;
-  opacity: 0.5; }
+  #sidebar .contact.me .name {
+    padding-top: 23px;
+    padding-bottom: 18px;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    opacity: 1; }
 
 #sidebar .contact.fresh .name {
   font-weight: 600;
@@ -123,12 +122,6 @@ a {
 
 #sidebar .contact.selected .name {
   color: #fff; }
-
-#sidebar .contact.me .name {
-  color: #fff;
-  font-weight: 200;
-  font-size: 15px;
-  opacity: 1; }
 
 #sidebar .contact .avatar {
   float: left;
@@ -148,7 +141,7 @@ a {
 #content {
   height: 100%;
   margin-left: 220px;
-  background: #fff0e6;
+  background: linear-gradient(to bottom, #fff0e6 0%, #ffe6eb 100%);
   overflow-x: hidden;
   overflow-y: auto;
   padding: 106px 40px 40px 40px;
@@ -240,7 +233,15 @@ a {
   padding: 88px 20px 182px 20px;
   overflow-y: auto;
   background: #fff;
-  z-index: 1; }
+  z-index: 1;
+  visibility: hidden;
+  transform: translateX(30%);
+  opacity: 0;
+  transition: 0.35s; }
+  #comments.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0%); }
 
 #comments h2 {
   font-size: 22px;
@@ -339,7 +340,9 @@ a {
   font-weight: 400;
   color: #fff;
   cursor: pointer;
-  transition: 0.35s; }
+  transition: 0.35s;
+  padding: 25px 10px;
+  line-height: 0px; }
 
 #comments .leave-comment button:hover {
   background: #1ebd6a; }
@@ -405,10 +408,15 @@ a {
     color: #333;
     margin: 0 0 20px 0; }
   .modal .content p {
-    margin: 0 0 20px 0;
-    color: #333;
-    font-size: 15px; }
+    margin: 20px 0 20px 0;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 13px; }
+    .modal .content p a {
+      color: rgba(0, 0, 0, 0.3);
+      font-weight: 600; }
 
+.modal.login.hidden {
+  display: none; }
 .modal.login fieldset {
   border: none;
   height: 40px;
@@ -439,6 +447,6 @@ a {
   transition: 0.35s;
   cursor: pointer; }
   .modal.login button:hover {
-    background: #4E259C; }
+    background: #FE4F72; }
 
 /* Vendor */

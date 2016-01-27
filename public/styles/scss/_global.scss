@@ -14,10 +14,6 @@ a {
   text-decoration: none;
 }
 
-.hidden {
-  display: none;
-}
-
 .clear:after {
   content: "";
   display: table;
@@ -32,6 +28,10 @@ a {
 
 #drag {
     pointer-events: none;
+    
+    &.hidden {
+                display: none;   
+            }
 }
 
 #drag h2 {
@@ -65,4 +65,8 @@ a {
   padding: 14px;
   font-weight: 600;
   font-size: 13px;
+    
+    &.hidden {
+                display: none;   
+            }
 }

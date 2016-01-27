@@ -7,7 +7,7 @@
 #content {
   height: 100%;
   margin-left: 220px;
-  background: $peach;
+  background: linear-gradient(to bottom, $peach 0%, #ffe6eb 100%);
   overflow-x: hidden;
   overflow-y: auto;
   padding: 106px 40px 40px 40px;
