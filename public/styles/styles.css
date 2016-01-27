@@ -359,7 +359,12 @@ a {
   right: 0;
   display: none;
   background: #f4f4f4;
-  border-top: 2px solid #e0e0e0; }
+  border-top: 2px solid #e0e0e0;
+  -moz-transition: width 0.25s ease-in-out, right 0.25s ease-in-out;
+  -webkit-transition: width 0.25s ease-in-out, right 0.25s ease-in-out;
+  -moz-transition: width 0.25s ease-in-out, right 0.25s ease-in-out;
+  -o-transition: width 0.25s ease-in-out, right 0.25s ease-in-out;
+  transition: width 0.25s ease-in-out, right 0.25s ease-in-out; }
 
 .me #compose {
   display: block; }
