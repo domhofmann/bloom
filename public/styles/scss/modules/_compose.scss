@@ -1,1 +1,34 @@
 /* Compose */
+
+#compose {
+  position: fixed;
+  z-index: 2;
+  left: 220px;
+  height: 80px;
+  box-sizing: border-box;
+  padding: 20px;
+  bottom: 0;
+  right: 0;
+  display: none;
+  background: $grey;
+  border-top: $light-border;
+}
+
+.me #compose {
+  display: block;
+}
+
+.comments-on #compose {
+  right: 330px;
+}
+
+#compose input {
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
