@@ -1,1 +1,72 @@
 /* Modal */
+
+.modal, #drag {
+  position: absolute;
+  background: rgba(229, 220, 214, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.modal .content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 400px;
+  margin-left: -200px;
+  margin-top: -200px;
+  background: #fff;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.modal .content h2 {
+  font-size: 22px;
+  font-weight: 300;
+  color: #333;
+  margin: 0 0 20px 0;
+}
+
+.modal .content p {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 15px;
+}
+
+.modal.login fieldset {
+  border: none;
+  height: 40px;
+  margin: 0 0 20px 0;
+}
+
+.modal.login fieldset input {
+  outline: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  font-size: 15px;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.modal.login button {
+  outline: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 8px;
+  height: 40px;
+  width: 100%;
+  background: #4CD964;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.modal.login button:hover {
+  background: #2ac644;
+}

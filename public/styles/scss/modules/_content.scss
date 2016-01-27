@@ -1,1 +1,100 @@
 /* Content */
+
+#contentWrapper {
+  height: 100%;
+}
+
+#content {
+  height: 100%;
+  margin-left: 220px;
+  background: #fff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 106px 40px 40px 40px;
+  box-sizing: border-box;
+}
+
+.me #content {
+  padding-bottom: 100px;
+}
+
+#content .new-posts {
+  border-bottom: 1px solid #F95074;
+  color: #F95074;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 0.1em;
+  margin-bottom: 40px;
+  text-align: right;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+#content .new-posts span {
+  background: #fff;
+  padding-left: 10px;
+}
+
+#content .post {
+  /*background: yellow;*/
+}
+
+#content .post:not(:last-child) {
+  margin: 0 0 40px 0;
+}
+
+#content .post .fragment {
+
+}
+
+#content .post .fragment:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+
+#content .post .fragment.text {
+  font-size: 22px;
+}
+
+#content .post .fragment.text a {
+  color: #0084FF;
+}
+
+#content .post .fragment.text a:hover {
+  text-decoration: underline;
+}
+
+#content .post .footer {
+  font-size: 13px;
+  color: #999;
+}
+
+#content .post .footer a {
+  color: #999;
+}
+
+#content .post .footer a:hover {
+  text-decoration: underline;
+}
+
+#content .post .footer .like.liked a {
+  color: #F95074;
+}
+
+#content .post .footer div {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#content .post .footer div.delete {
+  display: none;
+  margin-left: 10px;
+  float: right;
+}
+
+#content .post .footer div.delete a {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.me #content .post:hover .footer div.delete {
+  display: inline-block;
+}
