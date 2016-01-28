@@ -182,8 +182,52 @@ a {
         color: #999; }
         #content .post .footer a:hover {
           text-decoration: underline; }
+      #content .post .footer .like a {
+        position: relative;
+        padding-left: 20px; }
+        #content .post .footer .like a .icon {
+          background-image: url(img/like@2x.png);
+          background-size: 16px 16px;
+          height: 16px;
+          width: 16px;
+          display: inline-block;
+          position: absolute;
+          margin-left: -20px;
+          margin-top: -1px;
+          opacity: 0.5; }
       #content .post .footer .liked a {
         color: #F95074; }
+        #content .post .footer .liked a .icon {
+          background-image: url(img/liked@2x.png);
+          background-size: 16px 16px;
+          height: 16px;
+          width: 16px;
+          display: inline-block;
+          position: absolute;
+          margin-left: -20px;
+          margin-top: -1px;
+          opacity: 1; }
+      #content .post .footer .comment a {
+        position: relative;
+        padding-left: 25px; }
+        #content .post .footer .comment a .icon {
+          background-image: url(img/comments@2x.png);
+          background-size: 16px 16px;
+          height: 16px;
+          width: 16px;
+          display: inline-block;
+          position: absolute;
+          margin-left: -20px;
+          opacity: 0.5; }
+      #content .post .footer .commented a .icon {
+        background-image: url(img/commented@2x.png);
+        background-size: 16px 16px;
+        height: 16px;
+        width: 16px;
+        display: inline-block;
+        position: absolute;
+        margin-left: -20px;
+        opacity: 1; }
       #content .post .footer div {
         display: inline-block;
         margin-right: 10px; }
@@ -420,38 +464,45 @@ a {
       color: rgba(0, 0, 0, 0.3);
       font-weight: 600; }
 
-.modal.login.hidden {
-  display: none; }
-.modal.login fieldset {
-  border: none;
-  height: 40px;
-  margin: 0 0 20px 0; }
-  .modal.login fieldset input {
+.modal.login {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.35s; }
+  .modal.login.hidden {
+    visibility: hidden;
+    transform: scale(2);
+    opacity: 0; }
+  .modal.login fieldset {
+    border: none;
+    height: 40px;
+    margin: 0 0 20px 0; }
+    .modal.login fieldset input {
+      outline: none;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      height: 54px;
+      padding: 0px 10px;
+      font-size: 15px;
+      background: white;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px; }
+  .modal.login button {
     outline: none;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
     padding: 25px 10px;
+    line-height: 0px;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    width: 100%;
+    background: #FE4F72;
     font-size: 15px;
-    background: white;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px; }
-.modal.login button {
-  outline: none;
-  padding: 25px 10px;
-  line-height: 0px;
-  -webkit-appearance: none;
-  border: none;
-  border-radius: 8px;
-  height: 40px;
-  width: 100%;
-  background: #FE4F72;
-  font-size: 15px;
-  font-weight: 600;
-  color: #fff;
-  transition: 0.35s;
-  cursor: pointer; }
-  .modal.login button:hover {
-    background: #FE4F72; }
+    font-weight: 600;
+    color: #fff;
+    transition: 0.35s;
+    cursor: pointer; }
+    .modal.login button:hover {
+      background: #FE4F72; }
 
 /* Vendor */

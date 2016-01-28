@@ -82,14 +82,14 @@ var Builder = {
         likeString += ' (' + post['likeCount'] + ')';
       }
 
-      return '<div class="like' + (post['likedByMe'] ? ' liked' : '') + '"><a href="#">' + likeString + '</a></div>';
+      return '<div class="like' + (post['likedByMe'] ? ' liked' : '') + '"><a href="#"><span class="icon"></span>' + likeString + '</a></div>';
     };
 
     var commentString = 'Comment';
     if (post['commentCount'] > 0) {
       commentString += ' (' + post['commentCount'] + ')';
     }
-    commentString = '<div class="comment"><a href="#">' + commentString + '</a></div>';
+    commentString = '<div class="comment"><a href="#"><span class="icon"></span>' + commentString + '</a></div>';
 
     var $post = $('\
       <div class="post" data-postid="' + post['id'] + '">' +

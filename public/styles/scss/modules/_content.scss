@@ -74,10 +74,75 @@
                 }
             }
             
+            .like {
+                a {
+                    position: relative;
+                    padding-left: 20px;
+                    
+                    .icon {
+                        background-image: url(img/like@2x.png);
+                        background-size: 16px 16px;
+                        height: 16px;
+                        width: 16px;
+                        display: inline-block;
+                        position: absolute;
+                        margin-left: -20px;
+                        margin-top: -1px;
+                        opacity: 0.5;
+                    }
+                 }
+                }
+            
+            
             .liked {
                 a {
-                    color: #F95074;    
+                    color: #F95074;
+                    
+                    .icon {
+                     background-image: url(img/liked@2x.png);
+                     background-size: 16px 16px;
+                     height: 16px;
+                     width: 16px;
+                     display: inline-block;
+                     position: absolute;
+                     margin-left: -20px;
+                     margin-top: -1px;
+                     opacity: 1;
+                    }
                 }   
+            }
+            
+            .comment {
+                a {
+                    position: relative;
+                    padding-left: 25px;
+                    
+                    .icon {
+                        background-image: url(img/comments@2x.png);
+                        background-size: 16px 16px;
+                        height: 16px;
+                        width: 16px;
+                        display: inline-block;
+                        position: absolute;
+                        margin-left: -20px;
+                        opacity: 0.5;
+                    }
+                }
+            }
+            
+            .commented {
+                a {
+                    .icon {
+                        background-image: url(img/commented@2x.png);
+                        background-size: 16px 16px;
+                        height: 16px;
+                        width: 16px;
+                        display: inline-block;
+                        position: absolute;
+                        margin-left: -20px;
+                        opacity: 1;
+                    }
+                }
             }
             
             div {

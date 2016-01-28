@@ -52,8 +52,14 @@
 }
 
 .modal.login {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.35s;
+    
             &.hidden {
-                display: none;   
+                visibility: hidden;
+                transform: scale(2);
+                opacity: 0;
             }
     
             fieldset {
@@ -66,7 +72,8 @@
                     width: 100%;
                     height: 100%;
                     box-sizing: border-box;
-                    padding: 25px 10px;
+                    height: 54px;
+                    padding: 0px 10px;
                     font-size: 15px;
                     background: white;
                     border: $light-border;
