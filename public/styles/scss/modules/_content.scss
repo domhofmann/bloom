@@ -12,6 +12,12 @@
   overflow-y: auto;
   padding: 106px 40px 40px 40px;
   box-sizing: border-box;
+  text-align: -webkit-center;
+  -moz-transition: margin-right 0.35s ease-in-out;
+  -webkit-transition: margin-right 0.35s ease-in-out;
+  -moz-transition: margin-right 0.35s ease-in-out;
+  -o-transition: margin-right 0.35s ease-in-out;
+  transition: margin-right 0.35s ease-in-out;
     
     
     .new-posts {
@@ -37,6 +43,7 @@
         border: 2px solid $dark-peach;
         border-radius: 8px;
         width: 400px;
+        text-align: left;
         
         
         &:not(:last-child) {
@@ -183,3 +190,8 @@
     }
 }
 
+.comments-on {
+    #content {
+        margin-right: 330px;
+    }
+}
