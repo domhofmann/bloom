@@ -13,13 +13,14 @@
   background: $grey;
   border-top: $light-border;
   -moz-transition: width 0.25s ease-in-out, right 0.25s ease-in-out;
-    -webkit-transition: width 0.25s ease-in-out, right 0.25s ease-in-out;
-    -moz-transition: width 0.25s ease-in-out, right 0.25s ease-in-out;
-    -o-transition: width 0.25s ease-in-out, right 0.25s ease-in-out;
-    transition: width 0.25s ease-in-out, right 0.25s ease-in-out;
-    -webkit-box-shadow: 0px -22px 41px -10px rgba(255,230,235,1);
--moz-box-shadow: 0px -22px 41px -10px rgba(255,230,235,1);
-box-shadow: 0px -22px 41px -10px rgba(255,230,235,1);
+  -webkit-transition: width 0.25s ease-in-out, right 0.25s ease-in-out;
+  -moz-transition: width 0.25s ease-in-out, right 0.25s ease-in-out;
+  -o-transition: width 0.25s ease-in-out, right 0.25s ease-in-out;
+  transition: width 0.25s ease-in-out, right 0.25s ease-in-out;
+  -webkit-box-shadow: 0px -22px 41px -10px rgba(255,230,235,1);
+  -moz-box-shadow: 0px -22px 41px -10px rgba(255,230,235,1);
+  box-shadow: 0px -22px 41px -10px rgba(255,230,235,1);
+    
 }
 
 .me #compose {
