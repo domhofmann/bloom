@@ -155,8 +155,9 @@
             div {
                 display: inline-block;
                 margin-right: 10px;
-                
-                .delete {
+            }
+            
+            .delete {
                     display: none;
                     margin-left: 10px;
                     float: right; 
@@ -165,7 +166,6 @@
                         color: rgba(255, 0, 0, 0.5);   
                     }
                 }
-            }
         }
         
     }
@@ -176,16 +176,16 @@
     #content {
         padding-bottom: 100px;
         
-        .post {
-            &:hover {
+        .post:hover {
+         
                 .footer {
-                    div {
+                    
                         .delete {
                             display: inline-block;
                         }
-                    }
+                    
                 }
-            }
+        
         }
     }
 }
