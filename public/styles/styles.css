@@ -236,16 +236,16 @@ a {
       #content .post .footer div {
         display: inline-block;
         margin-right: 10px; }
-        #content .post .footer div .delete {
-          display: none;
-          margin-left: 10px;
-          float: right; }
-          #content .post .footer div .delete a {
-            color: rgba(255, 0, 0, 0.5); }
+      #content .post .footer .delete {
+        display: none;
+        margin-left: 10px;
+        float: right; }
+        #content .post .footer .delete a {
+          color: rgba(255, 0, 0, 0.5); }
 
 .me #content {
   padding-bottom: 100px; }
-  .me #content .post:hover .footer div .delete {
+  .me #content .post:hover .footer .delete {
     display: inline-block; }
 
 /* Header */
