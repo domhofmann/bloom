@@ -141,12 +141,11 @@ a {
 #content {
   height: 100%;
   margin-left: 220px;
-  background: linear-gradient(to bottom, #fff0e6 0%, #ffe6eb 100%);
+  background: linear-gradient(to bottom, rgba(255, 240, 230, 0.5) 0%, rgba(255, 230, 235, 0.5) 100%);
   overflow-x: hidden;
   overflow-y: auto;
   padding: 106px 40px 40px 40px;
   box-sizing: border-box;
-  text-align: -webkit-center;
   -moz-transition: margin-right 0.35s ease-in-out;
   -webkit-transition: margin-right 0.35s ease-in-out;
   -moz-transition: margin-right 0.35s ease-in-out;
@@ -159,21 +158,20 @@ a {
     font-weight: 600;
     line-height: 0.1em;
     margin-bottom: 40px;
-    text-align: right;
+    text-align: left;
     text-transform: uppercase;
     opacity: 0.5; }
     #content .new-posts span {
       background: #fff;
-      padding-left: 10px; }
+      padding-right: 10px; }
   #content .post {
     background: white;
     padding: 40px;
-    border: 2px solid #ecdfd5;
     border-radius: 8px;
     width: 400px;
     text-align: left; }
     #content .post:not(:last-child) {
-      margin: 0 0 40px 0; }
+      margin: 0 0 0 0; }
     #content .post .fragment:not(:last-child) {
       margin: 0 0 20px 0; }
     #content .post .fragment .text {
@@ -249,9 +247,6 @@ a {
   padding-bottom: 100px; }
   .me #content .post:hover .footer div .delete {
     display: inline-block; }
-
-.comments-on #content {
-  margin-right: 330px; }
 
 /* Header */
 #header {
