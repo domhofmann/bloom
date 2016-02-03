@@ -100,6 +100,7 @@ var Builder = {
           <div>' + moment.unix(post['createdTime']).fromNow() + '</div> \
           <div class="delete"><a href="#">Delete</a></div> \
         </div> \
+        <div class="breaker"></div> \
     ');
 
     var attachLikeAction = function () {

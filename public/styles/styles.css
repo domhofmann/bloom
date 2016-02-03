@@ -138,7 +138,7 @@ a {
 #contentWrapper {
   height: 100%; }
 
-#content {
+.wrapper {
   height: 100%;
   margin-left: 220px;
   background: linear-gradient(to bottom, rgba(255, 240, 230, 0.5) 0%, rgba(255, 230, 235, 0.5) 100%);
@@ -151,13 +151,22 @@ a {
   -moz-transition: margin-right 0.35s ease-in-out;
   -o-transition: margin-right 0.35s ease-in-out;
   transition: margin-right 0.35s ease-in-out; }
+
+#content {
+  width: 480px;
+  border: 2px solid #ecdfd5;
+  border-radius: 8px;
+  background: #FFF;
+  -webkit-box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.05); }
   #content .new-posts {
     border-bottom: 1px solid #F95074;
     color: #F95074;
     font-size: 11px;
     font-weight: 600;
     line-height: 0.1em;
-    margin-bottom: 40px;
+    margin: 0 40px 40px 40px;
     text-align: left;
     text-transform: uppercase;
     opacity: 0.5; }
@@ -166,19 +175,25 @@ a {
       padding-right: 10px; }
   #content .post {
     background: white;
-    padding: 40px;
+    padding: 0px 40px 20px 40px;
     border-radius: 8px;
     width: 400px;
     text-align: left; }
+    #content .post:first-child {
+      padding-top: 40px; }
     #content .post:not(:last-child) {
       margin: 0 0 0 0; }
+    #content .post:last-child {
+      padding-bottom: 40px; }
+      #content .post:last-child .breaker {
+        display: none; }
     #content .post .fragment:not(:last-child) {
       margin: 0 0 20px 0; }
-    #content .post .fragment .text {
+    #content .post .fragment.text {
       font-size: 22px; }
-      #content .post .fragment .text a {
-        color: #0084FF; }
-        #content .post .fragment .text a:hover {
+      #content .post .fragment.text a {
+        color: #ff829b; }
+        #content .post .fragment.text a:hover {
           text-decoration: underline; }
     #content .post .footer {
       font-size: 13px;
@@ -242,9 +257,20 @@ a {
         float: right; }
         #content .post .footer .delete a {
           color: rgba(255, 0, 0, 0.5); }
+    #content .post .breaker {
+      border-bottom: 1px solid #000;
+      color: #F95074;
+      font-size: 11px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      width: 75px;
+      text-align: left;
+      text-transform: uppercase;
+      opacity: 0.10; }
 
 .me #content {
-  padding-bottom: 100px; }
+  margin-bottom: 60px; }
   .me #content .post:hover .footer .delete {
     display: inline-block; }
 
@@ -414,9 +440,9 @@ a {
   -moz-transition: width 0.25s ease-in-out, right 0.25s ease-in-out;
   -o-transition: width 0.25s ease-in-out, right 0.25s ease-in-out;
   transition: width 0.25s ease-in-out, right 0.25s ease-in-out;
-  -webkit-box-shadow: 0px -22px 41px -10px #ffe6eb;
-  -moz-box-shadow: 0px -22px 41px -10px #ffe6eb;
-  box-shadow: 0px -22px 41px -10px #ffe6eb; }
+  -webkit-box-shadow: 0px -22px 41px -10px rgba(255, 230, 235, 0.75);
+  -moz-box-shadow: 0px -22px 41px -10px rgba(255, 230, 235, 0.75);
+  box-shadow: 0px -22px 41px -10px rgba(255, 230, 235, 0.75); }
 
 .me #compose {
   display: block; }
