@@ -34,3 +34,6 @@ node_modules
 
 # dotenv file
 .env
+
+# Sass Cache
+public/styles/.sass-cache

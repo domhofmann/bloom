@@ -1,0 +1,29 @@
+/* Header */
+
+#header {
+  margin-left: 220px;
+  /*background: #fff;*/
+  display: block;
+  position: fixed;
+  width: 100%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  z-index: 2;
+    
+    h1 {
+        font-weight: 300;
+        font-size: 22px;
+        color: #333;
+        background: #fff;
+        display: block;
+        padding: 19px 40px;
+        
+        span {
+            font-size: 15px;
+            
+            &.bio {
+                color: #aaa;   
+            }
+        }  
+    }
+}

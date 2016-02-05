@@ -27,7 +27,7 @@
       <div id="header">
         <h1>🍑...</h1>
       </div>
-      <div id="comments" class="hidden">
+      <div id="comments">
         <h2>Comments</h2>
         <a href="#" class="close">&#10005;</a>
         <div class="comment-list">
@@ -46,17 +46,20 @@
       <div id="compose" class="attachments">
           <input type="text" placeholder="write something...">
       </div>
-      <div id="content">
+      <div class="wrapper">
+        <div id="content">
         <!-- filled via app.js -->
+      </div> 
       </div>
+      
     </div>
   </div>
 
   <!-- displayed if there isn't a stream token in local storage -->
   <div class="modal login hidden">
     <div class="content">
-      <h2>Sign In</h2>
-      <p>Enter your email and password below.</p>
+      <img src="http://peach.cool/images/icon-peach-header-big@2x.png" />
+      
       <form>
         <fieldset>
           <input type="text" class="email" placeholder="Email Address">
@@ -66,6 +69,7 @@
         </fieldset>
         <button type="submit">Sign In</button>
       </form>
+        <p>Don't have an account? <a href="https://itunes.apple.com/us/app/peach-a-space-for-friends/id1067891186?ls=1&mt=8">Download the App</a></p>
     </div>
   </div>
 

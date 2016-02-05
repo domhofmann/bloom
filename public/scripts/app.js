@@ -24,7 +24,7 @@ $(function () {
       success: function (data) {
         $('body').addClass('comments-on')
         Interface.$comments.find('.comment-list').empty();
-        Interface.$comments.removeClass('hidden');;
+        Interface.$comments.addClass('open');;
         var post = data['data']['posts'][0];
         Interface.$comments.find('.comment-list').append(Builder.CommentList(post));
         Interface.$comments.find('textarea').focus();
@@ -51,7 +51,7 @@ $(function () {
   });
 
   Interface.$comments.find('.close').click(function () {
-    Interface.$comments.addClass('hidden');
+    Interface.$comments.removeClass('open');
     $('body').removeClass('comments-on');
     Interface.$comments.find('textarea').val('');
     Interface.$comments.find('textarea').blur();
@@ -390,3 +390,7 @@ $(function () {
     }
   }, 30 * 1000)
 });
+
+setTimeout(function(){
+    $('#content').addClass('open');
+}, 500);

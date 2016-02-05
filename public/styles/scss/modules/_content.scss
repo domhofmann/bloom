@@ -1,0 +1,234 @@
+/* Content */
+
+#contentWrapper {
+  height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+  margin-left: 220px;
+  background: linear-gradient(to bottom, rgba(255,240,230,0.5) 0%, rgba(255,230,235,0.5) 100%);
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 106px 40px 40px 40px;
+  box-sizing: border-box;
+  -moz-transition: margin-right 0.35s ease-in-out;
+  -webkit-transition: margin-right 0.35s ease-in-out;
+  -moz-transition: margin-right 0.35s ease-in-out;
+  -o-transition: margin-right 0.35s ease-in-out;
+  transition: margin-right 0.35s ease-in-out;
+}
+
+#content {
+  width: 480px;
+  position: relative;
+  border-radius: 8px;
+  background: #FFF;
+  -webkit-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.0);
+  -moz-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.0);
+  box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.0);
+  transition: 1s;
+    
+    &.open {
+    -webkit-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.05);    
+    }
+      
+    .new-posts {
+        border-bottom: 1px solid #F95074;
+        color: #F95074;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 0.1em;
+        margin: 0 40px 40px 40px;
+        text-align: left;
+        text-transform: uppercase;
+        opacity: 0.5;
+        
+        span {
+            background: #fff;
+            padding-right: 10px; 
+        }
+    }
+    
+    .post {
+        background: white;
+        padding: 0px 40px 20px 40px;
+        border-radius: 8px;
+        width: 400px;
+        text-align: left;
+        
+        &:first-child {
+            padding-top: 40px;   
+        }
+        &:not(:last-child) {
+            margin: 0 0 0 0;
+        }
+        
+        &:last-child {
+            padding-bottom: 40px;
+            
+            .breaker {
+                display: none;   
+            }
+        }
+        
+        .fragment {
+          
+            &:not(:last-child) {
+                margin: 0 0 20px 0;
+            }
+            
+            &.text {
+                font-size: 22px;
+                
+                a {
+                    color: $pink;
+                    
+                    &:hover {
+                        text-decoration: underline;   
+                    }
+                }
+            }
+        }
+        
+        .footer {
+            font-size: 13px;
+            color: #999;
+            
+            a {
+                color: #999; 
+                
+                &:hover {
+                    text-decoration: underline;   
+                }
+            }
+            
+            .like {
+                a {
+                    position: relative;
+                    padding-left: 20px;
+                    
+                    .icon {
+                        background-image: url(img/like@2x.png);
+                        background-size: 16px 16px;
+                        height: 16px;
+                        width: 16px;
+                        display: inline-block;
+                        position: absolute;
+                        margin-left: -20px;
+                        margin-top: -1px;
+                        opacity: 0.5;
+                    }
+                 }
+                }
+            
+            
+            .liked {
+                a {
+                    color: #F95074;
+                    
+                    .icon {
+                     background-image: url(img/liked@2x.png);
+                     background-size: 16px 16px;
+                     height: 16px;
+                     width: 16px;
+                     display: inline-block;
+                     position: absolute;
+                     margin-left: -20px;
+                     margin-top: -1px;
+                     opacity: 1;
+                    }
+                }   
+            }
+            
+            .comment {
+                a {
+                    position: relative;
+                    padding-left: 25px;
+                    
+                    .icon {
+                        background-image: url(img/comments@2x.png);
+                        background-size: 16px 16px;
+                        height: 16px;
+                        width: 16px;
+                        display: inline-block;
+                        position: absolute;
+                        margin-left: -20px;
+                        opacity: 0.5;
+                    }
+                }
+            }
+            
+            .commented {
+                a {
+                    .icon {
+                        background-image: url(img/commented@2x.png);
+                        background-size: 16px 16px;
+                        height: 16px;
+                        width: 16px;
+                        display: inline-block;
+                        position: absolute;
+                        margin-left: -20px;
+                        opacity: 1;
+                    }
+                }
+            }
+            
+            div {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            
+            .delete {
+                    display: none;
+                    margin-left: 10px;
+                    float: right; 
+                    
+                    a {
+                        color: rgba(255, 0, 0, 0.5);   
+                    }
+                }
+        }
+        
+        .breaker {
+                border-bottom: 1px solid #000;
+                color: #F95074;
+                font-size: 11px;
+                font-weight: 600;
+                margin-top: 40px;
+                margin-bottom: 20px;
+                width: 75px;
+                text-align: left;
+                text-transform: uppercase;
+                opacity: 0.10;   
+            }
+        
+    }
+ 
+}
+
+.me {
+    #content {
+        margin-bottom: 60px;
+        
+        .post:hover {
+         
+                .footer {
+                    
+                        .delete {
+                            display: inline-block;
+                        }
+                    
+                }
+        
+        }
+    }
+}
+
+.comments-on {
+    #content {
+        
+    }
+}

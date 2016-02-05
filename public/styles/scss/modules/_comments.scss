@@ -1,0 +1,147 @@
+/* Comments */
+
+#comments {
+  position: fixed;
+  right: 0;
+  width: 330px;
+  height: 100%;
+  box-sizing: border-box;
+  background: white;
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 88px 20px 182px 20px;
+  overflow-y: auto;
+  background: #fff;
+  z-index: 1;
+  visibility: hidden;
+  transform: translateX(30%);
+  opacity: 0;
+  transition: 0.35s;
+
+    
+    &.open {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0%);
+        
+    }
+}
+
+#comments h2 {
+  font-size: 22px;
+  font-weight: 300;
+  color: #333;
+  margin: 0 0 20px 0;
+}
+
+#comments .close {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 88px;
+  right: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 24px;
+  color: #999;
+  transition: 0.35s;
+}
+
+#comments .close:hover {
+  color: #333;
+}
+
+#comments .comment {
+  margin: 0 0 20px 0;
+}
+
+#comments .comment .avatar {
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  border-radius: 18px;
+  margin: 0 12px 0 0;
+}
+
+#comments .comment .details {
+  margin-left: 42px;
+}
+
+#comments .comment .author {
+  color: #333;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 3px 0 5px 0;
+}
+
+#comments .comment .author span {
+  color: #999;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#comments .comment .body {
+  color: #333;
+  font-size: 15px;
+  margin: 0 0 5px 0;
+}
+
+#comments .comment .timestamp {
+  color: #999;
+  font-size: 13px;
+}
+
+#comments .leave-comment {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 330px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: $grey;
+  border-top: $light-border;
+  border-left: $light-border;
+}
+
+#comments .leave-comment fieldset {
+  border: none;
+  height: 80px;
+  margin: 0 0 20px 0;
+}
+
+#comments .leave-comment textarea {
+  resize: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  background: white;;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+#comments .leave-comment button {
+  outline: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 8px;
+  height: 40px;
+  width: 100%;
+  background: $green;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.35s;
+  padding: 25px 10px;
+  line-height: 0px;
+}
+
+#comments .leave-comment button:hover {
+  background: $dark-green;
+}
+
