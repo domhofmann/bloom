@@ -388,3 +388,7 @@ $(function () {
     refresh();
   }, 30 * 1000)
 });
+
+setTimeout(function(){
+    $('#content').addClass('open');
+}, 500);
