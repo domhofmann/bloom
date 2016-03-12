@@ -158,7 +158,9 @@ var Builder = {
     switch (fragment['type']) {
       case 'text':
         $fragment = '\
-          <div class="fragment text">' + Autolinker.link(fragment['text'], {'twitter': false}) + '</div> \
+          <div class="fragment text">' + 
+            Autolinker.link(fragment['text'].replace(/\n/g, '<br>'), {'twitter': false}) + 
+          '</div> \
         ';
         break;
 
